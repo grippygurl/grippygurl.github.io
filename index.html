@@ -1,1 +1,43 @@
-tfdghjk
+<style>
+  .dotted-list {
+  list-style-type: none;
+}
+
+.dotted-list li {
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.dotted-list li span:first-child {
+  float: left;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+.dotted-list li span + span {
+  float: right;
+  display: inline-block;
+  padding: 0 3px 0 20px;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+.dotted-list li:before {
+  content: ".......................................................................................................................................................................................................................................................................................................................................................";
+  white-space: nowrap;
+  position: absolute;
+}
+</style>
+<ul class="dotted-list">
+  <li><span>Pizza Margherita</span><span>5.90 €</span></li>
+  <li><span>Pizza Hawaii</span><span>8.30 €</span></li>
+  <li><span>Pizza Mista</span><span>9.30 €</span></li>
+  <li><span>Pizza Caprese</span><span>9.30 €</span></li>
+  <li><span>Pizza Vegetarier</span><span>9.80 €</span></li>
+  <li><span>Pizza 4 Stagioni</span><span>10.40 €</span></li>
+</ul>
