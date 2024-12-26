@@ -18,8 +18,10 @@
   list-style-type: none;
     padding: 0;
     max-width: 800px;
-
 }
+      .n{
+        display: inline-flex;
+      }
 
 .dotted-list li {
     overflow: hidden;
@@ -56,25 +58,26 @@ float: right;
     <h1>Grippygurl's Menu</h1>
     <h2>Vids</h2>
 <ul class="dotted-list">
-  <li><span>1 - fucking raw, creampie (2m20s)</span><span>30 €</span></li>
-  <li><span>2 - fucking raw, creampie (49s)</span><span>25 €</span></li>
-  <li><span>3 - peeing, legs open on the edge of the bathub, touching myself and moaning (2m 30s)</span><span>30 €</span></li>
-  <li><span>4 - peeing, pussy closeup, touching myself and moaning (45s)</span><span>30 €</span></li>
-  <li><span>5 - anal fisting, my whole hand inside my tiny ass (2m47s)</span><span>80 €</span></li>
-  <li><span>6 - soles and ass, walking on transparent stairs, no panties under skirt (21s)</span><span>20 €</span></li>
-  <li><span>7 - shower, feet, watch my full body on the reflection of the wall (19s)</span><span>20 €</span></li>
+  <li><span><div class="n"></div>fucking raw, creampie (2m20s)</span><span>30 €</span></li>
+  <li><span><div class="n"></div>fucking raw, creampie (49s)</span><span>25 €</span></li>
+  <li><span><div class="n"></div>peeing, legs open on the edge of the bathub, touching myself and moaning (2m 30s)</span><span>30 €</span></li>
+  <li><span><div class="n"></div>peeing, pussy closeup, touching myself and moaning (45s)</span><span>30 €</span></li>
+  <li><span><div class="n"></div>peeing, pussy closeup, wetting a towel (40s)</span><span>30 €</span></li>
+  <li><span><div class="n"></div>anal fisting, my whole hand inside my tiny ass (2m47s)</span><span>80 €</span></li>
+  <li><span><div class="n"></div>soles and ass, walking on transparent stairs, no panties under skirt (21s)</span><span>20 €</span></li>
+  <li><span><div class="n"></div>shower, feet, watch my full body on the reflection of the wall (19s)</span><span>20 €</span></li>
 </ul>
 
         <h2>Pics</h2>
 <ul class="dotted-list">
-  <li><span>1 - XMAS set, 6 pics of me completely naked with lights and a cute ribbon</span><span>20 €</span></li>
+  <li><span><div class="n"></div>XMAS set, 6 pics of me completely naked with lights and a cute ribbon</span><span>20 €</span></li>
 </ul>
     <p>assorted pics of every kind :3 just ask <3</p>
 
         <h2>Other</h2>
     <ul class="dotted-list">
-        <li><span>1 - sexting, 20m</span><span>25 €</span></li>
-  <li><span>2 - dick rating, text</span><span>10 €</span></li>
+        <li><span><div class="n"></div>sexting, 20m</span><span>25 €</span></li>
+  <li><span><div class="n"></div>dick rating, text</span><span>10 €</span></li>
 </ul>
 
     <hr>
@@ -83,6 +86,20 @@ float: right;
       paypal only, srr<br>
       prefer to send on <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Session_App_Logo.svg" width="20"/> session
     </p>
+
+
+
+    <script>
+      let list = document.querySelectorAll(".dotted-list li span:first-child");
+
+let numbers = document.querySelectorAll(".n");
+
+for (let i = 0; i < list.length; i++) {
+    let number = numbers[i];
+    number.innerText = i + 1 + " - ";
+    
+}
+    </script>
   </body>
 </html>
 
